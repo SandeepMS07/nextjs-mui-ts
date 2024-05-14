@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+@font-face {
+  font-family: 'GeneralSans';
+  src: url('./fonts/general-sans/GeneralSans-Variable.woff2');
+}
+
+/* body {
+  margin: 0;
+  font-family: 'GeneralSans' !important;
+  background-color: #f6f8fb !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  box-sizing: border-box;
+} */
+
+.App {
+  text-align: center;
+}
+body {
+  margin: 0;
+  font-family: 'GeneralSans' !important;
+  background: #f6f8fb;
+  margin: 0px !important;
+  padding: 0px !important;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 600px) {
+  body {
+    overflow-y: hidden;
+  }
+}
+
+.App {
+  text-align: center;
+}
+
+.scrollbar-cus {
+  overflow: auto;
+}
+
+.scrollbar-cus::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar-cus::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.scrollbar-cus::-webkit-scrollbar-thumb {
+  background: #7495ff;
+  border-radius: 5px;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.cardOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 1) 100%);
+  border-radius: 10px;
+}
+
+.paper-container {
+  box-shadow: none !important;
+  background: #fff;
+  padding: 16px;
+  height: 77vh;
+  min-height: 77vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.paper-customization {
+  box-shadow: none !important;
+  border-radius: 16px !important;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.flex-container-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.anchorLinks {
+  color: blue;
+  text-decoration: underline;
+  font-size: 14px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+#toolbar {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+#toolbar::after {
+  content: none;
+}
+
+.login-buttons {
+  font-size: 16px !important;
+  font-weight: 500 !important;
+  font-style: normal;
+  margin-top: 14px !important;
+  padding: 12px !important;
+  width: 100% !important;
+  height: 48px !important;
+  background: #FFFFFF !important;
+  border-radius: 8px !important;
+  border: 1px solid #E0E0E9 !important;
+  display: flex !important;
+  justify-content: center !important;
+  box-shadow: 0px 18px 30px 0px rgba(131, 119, 198, 0.11) !important;
+}
+
+.about-company p span {
+  font-weight: 300 !important;
+  font-size: 12px !important;
+  line-height: 20px;
+}
+
+#app-textArea {
+  height: 100%;
+  resize: none;
+  border: none;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif !important;
+  color: #8c8e94;
+}
+
+textarea#app-textArea:focus,
+textarea#app-textArea:active {
+  border: none !important;
+}
+
+.upload-text {
+  font-size: 14px !important;
+  font-weight: 500;
+  font-family: 'DM Sans', sans-serif !important;
+}
+
+.filter-cells-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: auto;
+  align-items: center;
+  margin-top: 20px;
+  gap: 14px !important;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.inputFocusDisable:focus {
+  outline: none !important;
+  border: 1px solid #b2b3b7 !important;
+}
+
+@media only screen and (max-width: 400px) {
+  body {
+    overflow-y: auto;
+  }
+  
+}
+@media only screen and (max-width: 800px) {
+   
+  filter-cells-container{
+    flex-direction: column;
+    margin-top: 10px;
+    gap: 5px !important;
+  }
+}
