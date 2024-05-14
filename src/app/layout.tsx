@@ -30,7 +30,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const LayoutComponent = false ? AppLayout : AuthLayout;
+  const LayoutComponent = true ? AppLayout : AuthLayout;
   return (
     <html lang="en">
       <head>
